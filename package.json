@@ -1,0 +1,28 @@
+{
+  "name": "happyteams",
+  "version": "1.0.0",
+  "description": "Este é um projeto acadêmico da Faculdade Impacta, a ideia do projeto é criar uma aplicação simples de um chat para aplicar conceitos de computação em nuvem.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariellemattos/HappyTeams.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariellemattos/HappyTeams/issues"
+  },
+  "homepage": "https://github.com/ariellemattos/HappyTeams#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
