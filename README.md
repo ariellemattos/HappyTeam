@@ -8,11 +8,19 @@ O projeto também está disponivel em uma hospedagem S3 da AWS: http://happyteam
 - CSS;
 - JavaScript;
 - Node.js
+- Socket.io
 
 ## Acessar a página
-Para acessar a tela inical basta abrir o arquivo index.html em seu navegador
+```
+npm install
+npm run dev
+
+Go to localhost:3000
+```
+
 
 ## Telas disponiveis 
 - Tela Inicial
 - Login
 - Cadastro
+- Bate papo
