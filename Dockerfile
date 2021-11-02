@@ -1,7 +1,7 @@
-FROM node:12.7-alpine
-WORKDIR /var/www/app
-COPY package.json ./
-RUN yarn
+FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
 COPY . .
 EXPOSE 3000
-CMD npm start
+CMD [ "node", "server.js" ]
