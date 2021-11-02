@@ -2,7 +2,7 @@
   "name": "happyteams",
   "version": "1.0.0",
   "description": "Este é um projeto acadêmico da Faculdade Impacta, a ideia do projeto é criar uma aplicação simples de um chat para aplicar conceitos de computação em nuvem.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
