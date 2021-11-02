@@ -1,7 +1,6 @@
-FROM node:10.9.0
-WORKDIR /var/www/app
+FROM node:12.7-alpine
+WORKDIR /usr/src/app
 COPY package.json ./
-RUN yarn
+RUN npm install
 COPY . .
-EXPOSE 3000
-CMD npm start
+RUN npm start
