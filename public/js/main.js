@@ -43,10 +43,20 @@ chatForm.addEventListener('submit', (e)=>{
     e.target.elements.msg.focous();
 })
 
+// Pega o username atual
+function getCurrentUserName() {
+    const urlSearch = new URLSearchParams(window.location.search)
+    return urlSearch.get('username')
+}
 
 function outputMessage(message){
     const div = document.createElement('div')
     div.classList.add('message');
+
+    if (message.username === getCurrentUserName()) {
+        div.classList.add('me-box');
+    }
+
     div.innerHTML = `<p class="meta"> ${message.username} <span>${message.time}</span></p>
     <p class="text">
        ${message.text}

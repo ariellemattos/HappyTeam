@@ -12,7 +12,8 @@
 :root {
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
+	--light-color-a: #e6e9ff;
+	--light-color-b: #e2e5ff;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -89,14 +90,25 @@ a {
 	padding: 30px;
 	max-height: 500px;
 	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: var(--light-color-a);
 	border-radius: 5px;
 	overflow-wrap: break-word;
+	max-width: 80%;
+	width: fit-content;
+}
+
+.chat-messages .message.me-box {
+	margin-left: auto;
+	margin-right: 0;
+	background-color: var(--light-color-b);
 }
 
 .chat-messages .message .meta {
@@ -182,7 +194,7 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
-	background: var(--light-color);
+	background: var(--light-color-a);
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
